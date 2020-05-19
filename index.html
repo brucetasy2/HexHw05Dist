@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style/all.css" />
+
+  <title>首頁</title>
+</head>
+
+<body>
+
+  <h1>
+<!-- <section class="main-container">
+  <div class="form">
+     <h2 class="action">Edit Admin</h2>
+     <h3>Account</h3>
+  </div>
+</section> -->
+
+<div class="container">
+  <form>
+    <!-- Account -->
+    <section
+      class="form-group d-flex justify-content-between align-items-center usr-mb-2"
+    >
+      <h4>Edit Admin</h4>
+      <button type="button" class="close">
+        <span aria-hidden="true" class="material-icons md-24">close</span>
+      </button>
+    </section>
+
+    <div class="form-group">
+      <h5 class="mb-3">Account</h5>
+      <label for="account-name">Name</label>
+      <input
+        type="text"
+        class="form-control mb-3"
+        id="account-name"
+        placeholder="輸入帳號"
+        value="Emir Wicks"
+      />
+
+      <label for="account-email">Email</label>
+      <input
+        type="text"
+        class="form-control rmb-24px"
+        id="account-email"
+        placeholder="輸入電郵"
+        value="emir.wicks@mail.com"
+      />
+      <div class="box rmb-24px"></div>
+    </div>
+
+    <!-- Verification -->
+    <div class="form-group">
+      <h5 class="mb-3">Verification</h5>
+      <div
+        class="form-group d-flex justify-content-between align-items-center rmb-2"
+      >
+        <div class="d-flex justify-content-between align-items-center">
+          <span
+            class="BTcircle material-icons material-icons-color-white rmr-24px"
+          >
+            done
+          </span>
+          <h4 class="fz_h6">Verified</h4>
+        </div>
+        <h4 class="fz_lable">2020/4/12</h4>
+      </div>
+      <button
+        type="button"
+        class="btn btn-lg btn-block btn-info "
+      >
+        Send Verification Mail
+      </button>
+    </div>
+    <div class="box rmb-24px"></div>
+
+    <!-- Access Level -->
+    <div class="form-group">
+      <h4 class="mb-3">Access Level</h4>
+      <button
+        type="button"
+        class="btn btn-outline-light btn-info btn-lg btn-block dropdown-toggle rmb-24px"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Admin
+      </button>
+
+      <div class="dropdown-menu dropdown-menu-right">
+        <button class="dropdown-item" type="button">1</button>
+        <button class="dropdown-item" type="button">2</button>
+        <button class="dropdown-item" type="button">3</button>
+      </div>
+
+      <!-- 選項 -->
+      <div class="box rmb-24px"></div>
+      <h5 class="mb-3">Custom Access</h5>
+
+      <div class="custom-control custom-checkbox mb-3">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="cust-Ctrl-Valid1" required />
+        <label class="custom-control-label" for="cust-Ctrl-Valid1">
+          lecture
+        </label>
+      </div>
+
+      <div class="custom-control custom-checkbox mb-3">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="cust-Ctrl-Valid2" required />
+        <label class="custom-control-label" for="cust-Ctrl-Valid2">
+          Coupon
+        </label>
+      </div>
+
+      <div class="custom-control custom-checkbox mb-3">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="cust-Ctrl-Valid3" required />
+        <label class="custom-control-label" for="cust-Ctrl-Valid3">
+          Message
+        </label>
+      </div>
+
+      <div class="custom-control custom-checkbox mb-3">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="cust-Ctrl-Valid4" required />
+        <label class="custom-control-label" for="cust-Ctrl-Valid4">
+          Setting
+        </label>
+      </div>
+
+      <div class="custom-control custom-checkbox rmb-24px">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="cust-Ctrl-Valid5" required />
+        <label class="custom-control-label" for="cust-Ctrl-Valid5">
+          Task menu
+        </label>
+      </div>
+      <div class="box rmb-24px"></div>
+
+      <!-- Deactivate -->
+      <h4 class="mb-3">Deactivate Account</h4>
+      <div>
+        <div class="d-flex justify-content-start align-items-center mb-3">
+          <span class="material-icons material-icons-color-red rmr-9px">
+            warning
+          </span>
+          <h4 class="warningTxt">This cannot be undone!</h4>
+        </div>
+
+        <button
+          type="button"
+          class="btn btn-outline-danger btn-lg btn-block material-icons-color-red mb-5"
+        >
+          Deactivate This Account
+        </button>
+      </div>
+    </div>
+
+    <!-- BUTTON -->
+    <div class="d-flex justify-content-end align-items-center pb-3">
+      <button
+        type="button"
+        class="btn btn-outline-success btn-lg btn-lg-alt btn-Cancel mr-3"
+      >
+        Cancel
+      </button>
+      <button
+        type="submit"
+        class="btn btn-outline-success btn-lg btn-lg-alt2 btn-Update"
+      >
+        Update
+      </button>
+    </div>
+
+
+  </form>
+</div>
+</h1>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
